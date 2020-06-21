@@ -5,15 +5,27 @@ import { connect } from "react-redux";
 
 function ProductListHeading({ query, total, page, pages }) {
   return (
-    <div>
-      <h2
+    <div
+      css={css`
+        @media (max-width: 650px) {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      `}
+    >
+      <h1
         css={css`
           margin-bottom: 0;
+
+          @media (max-width: 650px) {
+            font-size: 1.5rem;
+          }
         `}
         data-testid="product-list-heading"
       >
         {query}
-      </h2>
+      </h1>
       <div
         css={css`
           display: flex;

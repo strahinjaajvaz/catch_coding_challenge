@@ -22,6 +22,11 @@ function Header({ changeSortOrder, sortBy }) {
           css={css`
             width: 225px;
             height: 100px;
+
+            @media (max-width: 650px) {
+              width: 112px;
+              height: 50px;
+            }
           `}
         />
         <select

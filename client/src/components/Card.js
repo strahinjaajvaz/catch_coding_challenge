@@ -46,6 +46,12 @@ function Card({ name, salePrice, retailPrice, imageUrl, quantityAvailable }) {
           flex-direction: column;
           align-items: center;
           flex: 1;
+
+          @media (max-width: 650px) {
+            p {
+              font-size: 0.8rem;
+            }
+          }
         `}
       >
         <div
@@ -70,6 +76,10 @@ function Card({ name, salePrice, retailPrice, imageUrl, quantityAvailable }) {
           data-testid="item-sale-price"
           css={css`
             font-size: 32px;
+
+            @media (max-width: 650px) {
+              font-size: 1.4rem !important;
+            }
           `}
         >
           {salePrice}
