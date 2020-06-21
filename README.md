@@ -19,3 +19,7 @@ The architecure was rather simple. We needed to have a component to fetch the da
 ## Issues
 
 I ran into issues with `cors`. I got around this by making a small `express` server to handle fetching the data and passing it, essentially acting as a proxy.
+
+## Assumptions
+
+I'm aware that `display: grid` isn't 100% compatible with IE11. For my code to be 100% compatible with IE11 I can use a library like Bootstrap for a grid, but I didn't want to use any external css for this challenge.
