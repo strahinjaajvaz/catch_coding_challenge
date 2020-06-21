@@ -9,7 +9,7 @@ This challenge was to render products from an api using Typescript/Javascript + 
 Make sure you have node install.
 
 1. Clone this repo
-2. `yarn` or `npm i` to install the packages
+2. Install both the client and server dependencies using `yarn` or `npm i` in their respective directory.
 3. `yarn start` or `npm start` to run the application
 
 ## Design decisions
