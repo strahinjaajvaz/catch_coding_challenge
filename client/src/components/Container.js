@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-export function Container(props) {
+function Container(props) {
   return (
     <div
       css={css`
@@ -13,3 +13,5 @@ export function Container(props) {
     />
   );
 }
+
+export default Container;

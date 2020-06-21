@@ -4,7 +4,7 @@ import App from "./App";
 
 import { Global, css } from "@emotion/core";
 
-import { Container } from "./components/Container";
+import Container from "./components/Container";
 
 ReactDOM.render(
   <React.StrictMode>

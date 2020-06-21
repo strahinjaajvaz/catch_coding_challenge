@@ -5,7 +5,7 @@ const INITIAL_STATE = {
   sortBy: "priceHigh",
 };
 
-function productsReducer(state = INITIAL_STATE, action) {
+export function productsReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case INITIALISE: {
       return { ...state, data: action.payload };
@@ -18,5 +18,3 @@ function productsReducer(state = INITIAL_STATE, action) {
     }
   }
 }
-
-export { productsReducer };

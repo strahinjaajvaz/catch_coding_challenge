@@ -88,12 +88,3 @@ Card.propTypes = {
 };
 
 export default Card;
-
-// {
-//     "id": "f56cb6f2-a926-4ff4-80be-4518b0d1997d",
-//     "name": "Havaianas Top Thongs -  Black",
-//     "salePrice": 1499,
-//     "retailPrice": 2500,
-//     "imageUrl": "https://s.catch.com.au/images/product/0001/1431/57aa8e0fcba93464428129_w200.jpg",
-//     "quantityAvailable": 71
-//   }
