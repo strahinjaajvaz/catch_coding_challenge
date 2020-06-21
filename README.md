@@ -14,8 +14,8 @@ Make sure you have node install.
 
 ## Design decisions
 
-The architecure was rather simple. We needed to have a component to fetch the data and then the rest of the app was soley manipulating the view based on the users selection. The state management that I chose was `redux` as thats the library I have the most familiarity with.
+The architecure was rather simple. We needed to have a component to fetch the data and then the rest of the app was soley manipulating the view based on the users selection. The state management that I chose was `redux` as thats the library I have the most familiarity with. If this was a full scale application, then I'd render a error or products not found page. Since the `sortBy` options are in the header, it wouldn't make sense to render only the icon and some error text.
 
 ## Issues
 
-I'd run into issues with `cors` on chrome when I made the fetch call. I got around this by making a small `express` server to handle fetching the data and passing it, essentially acting as a proxy.
+I ran into issues with `cors`. I got around this by making a small `express` server to handle fetching the data and passing it, essentially acting as a proxy.
