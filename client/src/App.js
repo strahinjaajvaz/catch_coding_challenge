@@ -14,7 +14,6 @@ const url = "http://localhost:4000/api/products";
 function App() {
   const { data, loading, error } = useFetch(url);
 
-  console.log(error);
   if (loading) return <p>Loading...</p>;
   else if (error) return <p>{error}</p>;
   else if (!data) return null;
