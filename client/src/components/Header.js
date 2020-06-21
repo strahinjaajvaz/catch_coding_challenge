@@ -7,7 +7,7 @@ import { capitalizeFirstLetter } from "../utils/strings";
 
 import { changeSort } from "../redux/actions/productActions";
 
-function Header({ changeSortOrder }) {
+function Header({ changeSortOrder, sortBy }) {
   return (
     <div>
       <div
@@ -28,6 +28,7 @@ function Header({ changeSortOrder }) {
           css={css`
             align-self: flex-end;
           `}
+          value={sortBy}
           data-testid="change-sort-by"
           onChange={changeSortOrder}
         >
@@ -46,8 +47,12 @@ function Header({ changeSortOrder }) {
 }
 
 export default connect(
-  () => ({}),
-  (dispatch) => ({
-    changeSortOrder: (sortBy) => dispatch(changeSort(sortBy)),
-  })
+  function (state) {
+    return { sortBy: state.products.sortBy };
+  },
+  function (dispatch) {
+    return {
+      changeSortOrder: (sortBy) => dispatch(changeSort(sortBy)),
+    };
+  }
 )(Header);
