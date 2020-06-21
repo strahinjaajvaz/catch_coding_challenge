@@ -16,7 +16,7 @@ function App() {
 
   if (loading) return <p>Loading...</p>;
   else if (error) return <p>{error}</p>;
-  else if (!data) return null;
+  else if (!data) return <p>No data</p>;
   else {
     const store = initializeStore();
     store.dispatch(initialize(data));
